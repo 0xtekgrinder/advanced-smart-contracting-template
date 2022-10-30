@@ -4,3 +4,12 @@ out = '../client/src/contracts'
 libs = ['lib']
 optimizer = true
 optimizer_runs = 200
+
+[rpc_endpoints]
+testnet = "${TESNET_RPC_URL}"
+mainet = "${MAINET_RPC_URL}"
+local = "${LOCAL_RPC_URL}"
+
+[etherscan]
+testnet = { key = "${ETHERSCAN_API_KEY}" }
+mainet = { key = "${ETHERSCAN_API_KEY}" }
